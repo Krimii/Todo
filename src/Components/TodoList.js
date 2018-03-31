@@ -9,13 +9,14 @@ export default class TodoList extends Component {
 				<div className="col-md-12">
 					{	
 						this.props.todos.map((todo) => {	
-							const classNames = `${todo.id}`;		
+							const id = `${todo.id}`;
+							// changed classNames to id
 							// console.log(classNames.length)							        
 							return (
 								<div className="card"  key={todo.id} >
 									<div className="card-header">
 										<i className="fa fa-angle-double-down"></i> 
-										<span className="card-link" data-toggle="collapse" data-parent="#accordion" href={`#${classNames}`}>
+										<span className="card-link" data-toggle="collapse" data-parent="#accordion" href={`#${id}`}>
 									        {     todo.headline}
 									    </span>
 										<span className="update">
@@ -23,7 +24,7 @@ export default class TodoList extends Component {
 										</span>
 									
 									</div>
-									<ListItems id={todo.id} chars={todo.charts} classNames={classNames} />
+									<ListItems id={todo.id} chars={todo.charts} classNames={id} />
 								</div>
 							)
 
