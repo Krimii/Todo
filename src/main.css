@@ -1,0 +1,85 @@
+body{
+	/*width: 90%;*/
+	margin: auto auto;
+	background: url(./bg.png) no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+a {
+    -webkit-transition: color 500ms ease-out;
+    -moz-transition: color 500ms ease-out;
+    -o-transition: color 500ms ease-out;
+    transition: color 500ms ease-out;
+}
+hr.bg-hr {
+    margin-top: 21px;
+    margin-bottom: 21px;
+    border: 0;
+    border-top: 1px solid #596a7b;
+}
+
+hr.bg-hr {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+hr.sm-hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 1px solid #596a7b;
+}
+hr.sm-hr {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+.todo{
+	width: 80%;
+	margin: auto auto;
+	padding-top: 1%;
+}
+
+.card{
+    background-color: #000;
+	opacity:0.8;
+    /*border: none;*/
+}
+
+.card-header,
+.footer{
+	background-color: #485563;
+	color: #fff;
+}
+.footer{
+    padding: 5px;
+}
+
+.update{
+	float: right;
+}
+.done{
+    text-decoration: line-through;
+}
+.done:hover{
+    text-decoration: line-through;
+}
+.done-btn{
+    padding-top: 5px;
+    float: left;
+    margin-right:  10px;
+}
+
+a.edit{
+    float: right;
+    margin-right: 15px;
+}
+a.delete{
+    float: right;
+    color: red;
+}
